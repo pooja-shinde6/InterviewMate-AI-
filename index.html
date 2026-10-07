@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="InterviewMate AI - AI based mock interview and communication feedback system">
+
+    <title>InterviewMate AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            InterviewMate <span>AI</span>
+        </div>
+
+        <nav class="nav-links">
+
+            <button onclick="showPage('home')">
+                Home
+            </button>
+
+            <button onclick="showPage('dashboard')">
+                Dashboard
+            </button>
+
+            <button onclick="showPage('history')">
+                History
+            </button>
+
+            <button onclick="showPage('profile')">
+                Profile
+            </button>
+
+        </nav>
+
+        <button class="mobile-menu-btn"
+            onclick="toggleMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HOME PAGE ================= -->
+
+        <section id="home" class="page active">
+
+            <div class="hero">
+
+                <div class="hero-content">
+
+                    <p class="tag">
+                        AI MOCK INTERVIEW PLATFORM
+                    </p>
+
+                    <h1>
+                        Practice Interviews.
+                        <span>Improve Your Confidence.</span>
+                    </h1>
+
+                    <p class="hero-description">
+
+                        InterviewMate AI helps students and freshers
+                        practice mock interviews, answer questions by
+                        typing or speaking, and receive AI-based
+                        feedback.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <button class="primary-btn"
+                            onclick="showPage('setup')">
+
+                            Start Interview
+
+                        </button>
+
+                        <button class="secondary-btn"
+                            onclick="showPage('about')">
+
+                            Learn More
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Card -->
+
+                <div class="hero-card">
+
+                    <div class="ai-circle">
+                        AI
+                    </div>
+
+                    <h2>
+                        Smart Interview Practice
+                    </h2>
+
+                    <p>
+                        Answer questions, get scores,
+                        communication feedback and
+                        personalized suggestions.
+                    </p>
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>AI</strong>
+                            <small>Analysis</small>
+                        </div>
+
+                        <div>
+                            <strong>10</strong>
+                            <small>Score</small>
+                        </div>
+
+                        <div>
+                            <strong>🎤</strong>
+                            <small>Voice</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FEATURES ================= -->
+
+            <div class="section-heading">
+
+                <p class="tag">
+                    FEATURES
+                </p>
+
+                <h2>
+                    Everything You Need For Interview Practice
+                </h2>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ⌨️
+                    </div>
+
+                    <h3>
+                        Type Your Answer
+                    </h3>
+
+                    <p>
+                        Type your interview answer using
+                        the text box and submit it for analysis.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎤
+                    </div>
+
+                    <h3>
+                        Speak Your Answer
+                    </h3>
+
+                    <p>
+                        Answer interview questions by speaking
+                        through your microphone.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🤖
+                    </div>
+
+                    <h3>
+                        AI Answer Analysis
+                    </h3>
+
+                    <p>
+                        Get answer score, strengths,
+                        weaknesses and improvement suggestions.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💬
+                    </div>
+
+                    <h3>
+                        Communication Feedback
+                    </h3>
+
+                    <p>
+                        Spoken answers can receive feedback
+                        about speaking speed and filler words.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📊
+                    </div>
+
+                    <h3>
+                        Performance Report
+                    </h3>
+
+                    <p>
+                        View your overall interview score
+                        and performance summary.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📚
+                    </div>
+
+                    <h3>
+                        Interview History
+                    </h3>
+
+                    <p>
+                        Keep track of previous interviews
+                        and improve your performance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= ABOUT PAGE ================= -->
+
+        <section id="about" class="page">
+
+            <div class="section-heading">
+
+                <p class="tag">
+                    ABOUT PROJECT
+                </p>
+
+                <h2>
+                    About InterviewMate AI
+                </h2>
+
+            </div>
+
+
+            <div class="about-container">
+
+                <div class="about-card">
+
+                    <h3>
+                        What is InterviewMate AI?
+                    </h3>
+
+                    <p>
+
+                        InterviewMate AI is a web-based
+                        mock interview platform designed
+                        for students and freshers.
+
+                    </p>
+
+                    <p>
+
+                        It allows users to select a job role,
+                        interview type and difficulty level
+                        and practice interview questions.
+
+                    </p>
+
+                    <p>
+
+                        Users can answer questions by typing
+                        or speaking. The system provides
+                        answer feedback and communication
+                        feedback for spoken answers.
+
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>
+                        Project Objectives
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Provide an online mock interview platform.
+                        </li>
+
+                        <li>
+                            Help students practice interview questions.
+                        </li>
+
+                        <li>
+                            Analyze user answers.
+                        </li>
+
+                        <li>
+                            Provide scores and feedback.
+                        </li>
+
+                        <li>
+                            Identify strengths and weak areas.
+                        </li>
+
+                        <li>
+                            Improve interview confidence.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTERVIEW SETUP ================= -->
+
+        <section id="setup" class="page">
+
+            <div class="form-container">
+
+                <div class="section-heading">
+
+                    <p class="tag">
+                        MOCK INTERVIEW
+                    </p>
+
+                    <h2>
+                        Set Up Your Interview
+                    </h2>
+
+                    <p>
+                        Select your interview preferences
+                        before starting.
+                    </p>
+
+                </div>
+
+
+                <div class="form-card">
+
+                    <!-- Name -->
+
+                    <label for="userName">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="userName"
+                        placeholder="Enter your name"
+                    >
+
+
+                    <!-- Job Role -->
+
+                    <label for="jobRole">
+                        Select Job Role
+                    </label>
+
+                    <select id="jobRole">
+
+                        <option value="Frontend Developer">
+                            Frontend Developer
+                        </option>
+
+                        <option value="Backend Developer">
+                            Backend Developer
+                        </option>
+
+                        <option value="Java Developer">
+                            Java Developer
+                        </option>
+
+                        <option value="Full Stack Developer">
+                            Full Stack Developer
+                        </option>
+
+                        <option value="Data Analyst">
+                            Data Analyst
+                        </option>
+
+                        <option value="General HR">
+                            General HR
+                        </option>
+
+                    </select>
+
+
+                    <!-- Interview Type -->
+
+                    <label for="interviewType">
+                        Interview Type
+                    </label>
+
+                    <select id="interviewType">
+
+                        <option value="Technical">
+                            Technical Interview
+                        </option>
+
+                        <option value="HR">
+                            HR Interview
+                        </option>
+
+                    </select>
+
+
+                    <!-- Difficulty -->
+
+                    <label for="difficulty">
+                        Difficulty Level
+                    </label>
+
+                    <select id="difficulty">
+
+                        <option value="Easy">
+                            Easy
+                        </option>
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+                        <option value="Hard">
+                            Hard
+                        </option>
+
+                    </select>
+
+
+                    <!-- Number of Questions -->
+
+                    <label for="questionNumber">
+                        Number of Questions
+                    </label>
+
+                    <select id="questionNumber">
+
+                        <option value="5">
+                            5 Questions
+                        </option>
+
+                        <option value="10">
+                            10 Questions
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        class="primary-btn full-width"
+                        onclick="startInterview()">
+
+                        🚀 Start Mock Interview
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= INTERVIEW PAGE ================= -->
+
+        <section id="interview" class="page">
+
+            <!-- Interview Header -->
+
+            <div class="interview-header">
+
+                <div>
+
+                    <span id="roleBadge" class="badge">
+                        Frontend Developer
+                    </span>
+
+                    <span id="typeBadge" class="badge">
+                        Technical
+                    </span>
+
+                    <span id="difficultyBadge" class="badge">
+                        Medium
+                    </span>
+
+                </div>
+
+
+                <div class="question-counter">
+
+                    <span id="questionCount">
+                        Question 1 of 5
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Interview Card -->
+
+            <div class="interview-card">
+
+                <div class="question-label">
+
+                    INTERVIEW QUESTION
+
+                </div>
+
+
+                <h2 id="questionText">
+
+                    Question will appear here.
+
+                </h2>
+
+
+                <!-- Answer Mode -->
+
+                <div class="answer-mode">
+
+                    <button
+                        id="typeTab"
+                        class="answer-tab active"
+                        onclick="setAnswerMode('type')">
+
+                        ⌨️ Type Answer
+
+                    </button>
+
+
+                    <button
+                        id="speakTab"
+                        class="answer-tab"
+                        onclick="setAnswerMode('speak')">
+
+                        🎤 Speak Answer
+
+                    </button>
+
+                </div>
+
+
+                <!-- ================= TYPE ANSWER ================= -->
+
+                <div id="typeAnswerBox">
+
+                    <label for="answerBox">
+                        Your Answer
+                    </label>
+
+                    <textarea
+                        id="answerBox"
+                        placeholder="Type your answer here..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- ================= SPEAK ANSWER ================= -->
+
+                <div
+                    id="voiceBox"
+                    class="voice-box hidden">
+
+                    <div class="voice-title">
+
+                        <div class="microphone-icon">
+                            🎤
+                        </div>
+
+                        <h3>
+                            Speak Your Answer
+                        </h3>
+
+                        <p>
+                            Click the button and speak clearly.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Microphone Button -->
+
+                    <button
+                        id="micBtn"
+                        class="mic-button"
+                        onclick="toggleSpeech()">
+
+                        🎤 Start Speaking
+
+                    </button>
+
+
+                    <p
+                        id="speechStatus"
+                        class="speech-status">
+
+                        Microphone is ready.
+
+                    </p>
+
+
+                    <!-- Speaking Timer -->
+
+                    <div class="speaking-timer">
+
+                        ⏱ Speaking Time:
+                        <strong id="timer">
+                            00:00
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Transcript -->
+
+                    <div class="transcript-box">
+
+                        <div class="transcript-title">
+
+                            📝 Speech Transcript
+
+                        </div>
+
+                        <p id="transcriptText">
+
+                            Your spoken answer will
+                            appear here...
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Answer Timer for typing -->
+
+                <div class="answer-tools">
+
+                    <span>
+
+                        ⏱ Answer Time:
+                        <strong id="answerTimer">
+                            00:00
+                        </strong>
+
+                    </span>
+
+
+                    <button
+                        class="clear-btn"
+                        onclick="clearAnswer()">
+
+                        Clear Answer
+
+                    </button>
+
+                </div>
+
+
+                <!-- Submit -->
+
+                <button
+                    class="primary-btn full-width"
+                    onclick="submitAnswer()">
+
+                    Submit Answer →
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= RESULT PAGE ================= -->
+
+        <section id="result" class="page">
+
+            <div class="section-heading center">
+
+                <p class="tag">
+                    AI FEEDBACK
+                </p>
+
+                <h2>
+                    Answer Analysis
+                </h2>
+
+                <p>
+                    Here is your performance for this question.
+                </p>
+
+            </div>
+
+
+            <!-- Score Cards -->
+
+            <div class="score-grid">
+
+                <div class="score-card">
+
+                    <span>
+                        Answer Score
+                    </span>
+
+                    <strong id="answerScore">
+                        0/10
+                    </strong>
+
+                </div>
+
+
+                <div class="score-card">
+
+                    <span>
+                        Communication
+                    </span>
+
+                    <strong id="communicationScore">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="score-card">
+
+                    <span>
+                        Question
+                    </span>
+
+                    <strong id="resultQuestionNo">
+                        1/5
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feedback -->
+
+            <div class="feedback-grid">
+
+
+                <!-- Strengths -->
+
+                <div class="feedback-card">
+
+                    <div class="feedback-heading success">
+
+                        ✓ Strengths
+
+                    </div>
+
+                    <ul id="strengths">
+
+                        <li>
+                            Your strengths will appear here.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Improvements -->
+
+                <div class="feedback-card">
+
+                    <div class="feedback-heading warning">
+
+                        ⚠ Areas for Improvement
+
+                    </div>
+
+                    <ul id="improvements">
+
+                        <li>
+                            Your improvements will appear here.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Communication -->
+
+                <div class="feedback-card">
+
+                    <div class="feedback-heading">
+
+                        💬 Communication Feedback
+
+                    </div>
+
+                    <div
+                        id="communicationFeedback">
+
+                        Communication feedback
+                        will appear here.
+
+                    </div>
+
+                </div>
+
+
+                <!-- Suggested Answer -->
+
+                <div class="feedback-card">
+
+                    <div class="feedback-heading">
+
+                        💡 Suggested Answer
+
+                    </div>
+
+                    <p id="suggestedAnswer">
+
+                        Suggested answer will
+                        appear here.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="nextBtn"
+                class="primary-btn full-width"
+                onclick="nextQuestion()">
+
+                Next Question →
+
+            </button>
+
+        </section>
+        <!-- ================= FINAL REPORT ================= -->
+
+        <section id="final" class="page">
+
+            <div class="final-report">
+
+                <div class="section-heading center">
+
+                    <p class="tag">
+                        INTERVIEW COMPLETED
+                    </p>
+
+                    <h1>
+                        Final Performance Report
+                    </h1>
+
+                    <p id="finalGreeting">
+
+                        Well done! Here is your
+                        interview performance.
+
+                    </p>
+
+                </div>
+
+
+                <!-- Overall Score -->
+
+                <div class="overall-score">
+
+                    <div class="score-circle">
+
+                        <span id="finalScore">
+                            0%
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Overall Interview Score
+                    </h3>
+
+                </div>
+
+
+                <!-- Report Statistics -->
+
+                <div class="report-stats">
+
+                    <div class="report-stat">
+
+                        <strong id="totalQuestions">
+                            0
+                        </strong>
+
+                        <span>
+                            Questions
+                        </span>
+
+                    </div>
+
+
+                    <div class="report-stat">
+
+                        <strong id="finalAnswerScore">
+                            0/10
+                        </strong>
+
+                        <span>
+                            Answer Average
+                        </span>
+
+                    </div>
+
+
+                    <div class="report-stat">
+
+                        <strong id="finalCommScore">
+                            N/A
+                        </strong>
+
+                        <span>
+                            Communication
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Strong Areas -->
+
+                <div class="report-section">
+
+                    <h3>
+                        💪 Strong Areas
+                    </h3>
+
+                    <ul id="finalStrengths">
+
+                        <li>
+                            Your strong areas will
+                            appear here.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Improvement -->
+
+                <div class="report-section">
+
+                    <h3>
+                        📈 Needs Improvement
+                    </h3>
+
+                    <ul id="finalImprovements">
+
+                        <li>
+                            Your improvement areas
+                            will appear here.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Suggestions -->
+
+                <div class="report-section">
+
+                    <h3>
+                        💡 Personalized Suggestions
+                    </h3>
+
+                    <ul id="finalSuggestions">
+
+                        <li>
+                            Personalized suggestions
+                            will appear here.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Report Buttons -->
+
+                <div class="report-actions">
+
+                    <button
+                        class="primary-btn"
+                        onclick="showPage('setup')">
+
+                        🚀 New Interview
+
+                    </button>
+
+
+                    <button
+                        class="secondary-btn"
+                        onclick="showPage('history')">
+
+                        📚 View History
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section id="dashboard" class="page">
+
+            <div class="section-heading">
+
+                <p class="tag">
+                    YOUR PROGRESS
+                </p>
+
+                <h2>
+                    Dashboard
+                </h2>
+
+                <p>
+                    Track your interview practice.
+                </p>
+
+            </div>
+
+
+            <!-- Dashboard Statistics -->
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card">
+
+                    <span>
+                        Total Interviews
+                    </span>
+
+                    <strong id="dashTotal">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <span>
+                        Average Score
+                    </span>
+
+                    <strong id="dashAvg">
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <span>
+                        Communication
+                    </span>
+
+                    <strong id="dashComm">
+                        0/10
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recent Interviews -->
+
+            <div class="dashboard-history">
+
+                <div class="dashboard-title">
+
+                    <h3>
+                        Recent Interviews
+                    </h3>
+
+                    <button
+                        class="text-btn"
+                        onclick="showPage('history')">
+
+                        View All →
+
+                    </button>
+
+                </div>
+
+
+                <div id="recentList">
+
+                    <div class="empty-message">
+
+                        No interviews yet.
+                        Start your first mock interview.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ================= HISTORY PAGE ================= -->
+
+        <section id="history" class="page">
+
+            <div class="section-heading">
+
+                <p class="tag">
+                    YOUR PRACTICE
+                </p>
+
+                <h2>
+                    Interview History
+                </h2>
+
+                <p>
+                    Review your previous interview performance.
+                </p>
+
+            </div>
+
+
+            <div
+                id="historyList"
+                class="history-list">
+
+                <div class="empty-message">
+
+                    No interviews completed yet.
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROFILE PAGE ================= -->
+
+        <section id="profile" class="page">
+
+            <div class="section-heading">
+
+                <p class="tag">
+                    ACCOUNT
+                </p>
+
+                <h2>
+                    My Profile
+                </h2>
+
+            </div>
+
+
+            <div class="profile-container">
+
+                <div class="profile-card">
+
+                    <div class="profile-avatar">
+                        👤
+                    </div>
+
+                    <h2 id="profileName">
+                        User
+                    </h2>
+
+                    <p>
+                        InterviewMate AI User
+                    </p>
+
+                </div>
+
+
+                <div class="profile-info">
+
+                    <div class="info-row">
+
+                        <span>
+                            Name
+                        </span>
+
+                        <strong id="profileNameInfo">
+                            Not available
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>
+                            Platform
+                        </span>
+
+                        <strong>
+                            InterviewMate AI
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>
+                            Purpose
+                        </span>
+
+                        <strong>
+                            Interview Practice
+                        </strong>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <span>
+                            Answer Modes
+                        </span>
+
+                        <strong>
+                            Typing + Speaking
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOGIN PAGE ================= -->
+
+        <section id="login" class="page">
+
+            <div class="auth-container">
+
+                <div class="auth-card">
+
+                    <div class="auth-logo">
+                        InterviewMate <span>AI</span>
+                    </div>
+
+                    <h2>
+                        Welcome Back
+                    </h2>
+
+                    <p>
+                        Login to continue your interview practice.
+                    </p>
+
+
+                    <label for="loginEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                    >
+
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                    >
+
+
+                    <button
+                        class="primary-btn full-width"
+                        onclick="loginUser()">
+
+                        Login
+
+                    </button>
+
+
+                    <p class="auth-bottom">
+
+                        Don't have an account?
+
+                        <button
+                            class="link-btn"
+                            onclick="showPage('register')">
+
+                            Register
+
+                        </button>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= REGISTER PAGE ================= -->
+
+        <section id="register" class="page">
+
+            <div class="auth-container">
+
+                <div class="auth-card">
+
+                    <div class="auth-logo">
+                        InterviewMate <span>AI</span>
+                    </div>
+
+                    <h2>
+                        Create Account
+                    </h2>
+
+                    <p>
+                        Create your InterviewMate AI account.
+                    </p>
+
+
+                    <label for="registerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Enter your full name"
+                    >
+
+
+                    <label for="registerEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter your email"
+                    >
+
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Create password"
+                    >
+
+
+                    <button
+                        class="primary-btn full-width"
+                        onclick="registerUser()">
+
+                        Create Account
+
+                    </button>
+
+
+                    <p class="auth-bottom">
+
+                        Already have an account?
+
+                        <button
+                            class="link-btn"
+                            onclick="showPage('login')">
+
+                            Login
+
+                        </button>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+      </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                InterviewMate <span>AI</span>
+
+            </div>
+
+            <p>
+
+                AI-Based Mock Interview Practice
+                and Communication Feedback System
+
+            </p>
+
+            <div class="footer-links">
+
+                <button onclick="showPage('home')">
+                    Home
+                </button>
+
+                <button onclick="showPage('about')">
+                    About
+                </button>
+
+                <button onclick="showPage('setup')">
+                    Start Interview
+                </button>
+
+            </div>
+
+            <p class="copyright">
+
+                © 2026 InterviewMate AI.
+                Final Year Project.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+        

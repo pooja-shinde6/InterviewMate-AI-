@@ -1,0 +1,1960 @@
+/* =====================================================
+   InterviewMate AI
+   STYLE.CSS - PART 1
+   Basic Reset + Body + Navbar + Common Elements
+   ===================================================== */
+
+
+/* ================= BASIC RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= BODY ================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f7fb;
+
+    color: #172033;
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+}
+
+
+/* ================= BUTTON RESET ================= */
+
+button {
+    font-family: inherit;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+
+    height: 70px;
+
+    background: #111827;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================= LOGO ================= */
+
+.logo {
+    font-size: 23px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.3px;
+
+    white-space: nowrap;
+}
+
+
+.logo span {
+    color: #60a5fa;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.nav-links button {
+    background: transparent;
+
+    border: none;
+
+    color: #e5e7eb;
+
+    padding: 9px 13px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.nav-links button:hover {
+    background: #1f2937;
+
+    color: #60a5fa;
+}
+
+
+/* ================= MOBILE MENU BUTTON ================= */
+
+.mobile-menu-btn {
+    display: none;
+
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 35px 20px;
+
+    min-height: calc(100vh - 150px);
+}
+
+
+/* ================= PAGE SYSTEM ================= */
+
+.page {
+    display: none;
+}
+
+
+.page.active {
+    display: block;
+
+    animation: pageFade 0.35s ease;
+}
+
+
+/* Page animation */
+
+@keyframes pageFade {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ================= COMMON SECTION HEADING ================= */
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+
+.section-heading.center {
+    text-align: center;
+}
+
+
+.section-heading h1 {
+    font-size: 42px;
+
+    line-height: 1.15;
+
+    margin-bottom: 12px;
+}
+
+
+.section-heading h2 {
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+
+.section-heading p {
+    color: #667085;
+}
+
+
+/* ================= TAG ================= */
+
+.tag {
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 9px;
+
+    text-transform: uppercase;
+}
+
+
+/* ================= PRIMARY BUTTON ================= */
+
+.primary-btn {
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 13px 21px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow: 0 6px 15px rgba(37, 99, 235, 0.18);
+}
+
+
+.primary-btn:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ================= SECONDARY BUTTON ================= */
+
+.secondary-btn {
+    background: #e9eef7;
+
+    color: #172033;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 13px 21px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.secondary-btn:hover {
+    background: #dbe4f3;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= FULL WIDTH ================= */
+
+.full-width {
+    width: 100%;
+
+    margin-top: 18px;
+}
+
+
+/* ================= COMMON CARD ================= */
+
+.card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================= HIDDEN ================= */
+
+.hidden {
+    display: none !important;
+}
+
+
+/* ================= SMALL TEXT ================= */
+
+.muted {
+    color: #667085;
+
+    font-size: 14px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        height: 65px;
+
+        padding: 0 4%;
+    }
+
+
+    .logo {
+        font-size: 19px;
+    }
+
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 65px;
+
+        left: 0;
+
+        width: 100%;
+
+        background: #111827;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 10px 20px 18px;
+    }
+
+
+    .nav-links.show {
+        display: flex;
+    }
+
+
+    .nav-links button {
+        width: 100%;
+
+        text-align: left;
+
+        padding: 12px;
+    }
+
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+
+    main {
+        padding: 25px 15px;
+    }
+
+
+    .section-heading h1 {
+        font-size: 34px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+}
+/* =====================================================
+   InterviewMate AI
+   STYLE.CSS - PART 2
+   Home Page + Hero Section + Features
+   ===================================================== */
+
+/* ---------- HOME HERO ---------- */
+
+.hero {
+    min-height: 520px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 45px;
+    padding: 45px 0;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.hero-content h1 span {
+    color: #2563eb;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #667085;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-card {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 25px;
+    padding: 28px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.ai-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.ai-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ai-card p {
+    color: #667085;
+    margin-bottom: 20px;
+}
+
+.ai-score {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 12px;
+}
+
+.ai-score span:first-child {
+    color: #667085;
+    font-size: 14px;
+}
+
+.ai-score strong {
+    color: #2563eb;
+    font-size: 20px;
+}
+
+
+/* ---------- HOME FEATURES ---------- */
+
+.features-section {
+    padding: 55px 0 35px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 17px;
+}
+
+.feature-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ---------- HOME CTA ---------- */
+
+.home-cta {
+    margin-top: 45px;
+    padding: 40px;
+    background: #111827;
+    color: white;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.home-cta h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.home-cta p {
+    color: #cbd5e1;
+    margin-bottom: 22px;
+}
+
+.home-cta .primary-btn {
+    background: #60a5fa;
+    color: #111827;
+}
+
+.home-cta .primary-btn:hover {
+    background: #93c5fd;
+}
+
+
+/* ---------- RESPONSIVE HOME ---------- */
+
+@media (max-width: 900px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-content {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        margin-top: 10px;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: auto;
+        padding: 30px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons button {
+        width: 100%;
+    }
+
+    .ai-card {
+        padding: 22px;
+    }
+
+    .features-section {
+        padding-top: 35px;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-cta {
+        padding: 30px 20px;
+    }
+
+    .home-cta h2 {
+        font-size: 25px;
+    }
+}
+/* =====================================================
+   InterviewMate AI
+   STYLE.CSS - PART 3
+   About Page + Interview Setup
+   ===================================================== */
+
+
+/* ---------- ABOUT PAGE ---------- */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.about-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.about-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #667085;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.about-list li {
+    position: relative;
+    padding: 9px 0 9px 28px;
+    color: #475467;
+}
+
+.about-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+
+/* ---------- SETUP PAGE ---------- */
+
+.setup-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.setup-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.setup-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #344054;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid #d0d5dd;
+    border-radius: 10px;
+    padding: 13px 14px;
+    font-size: 15px;
+    font-family: inherit;
+    background: white;
+    color: #172033;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #98a2b3;
+}
+
+
+/* ---------- OPTION CARDS ---------- */
+
+.option-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.option-card {
+    border: 1px solid #d0d5dd;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.25s ease;
+    background: #fff;
+}
+
+.option-card:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.option-card.active {
+    border-color: #2563eb;
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.option-card strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.option-card small {
+    color: #667085;
+}
+
+
+/* ---------- SETUP INFO ---------- */
+
+.setup-info {
+    margin-top: 22px;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+}
+
+.setup-info h4 {
+    margin-bottom: 5px;
+}
+
+.setup-info p {
+    color: #667085;
+    font-size: 14px;
+}
+
+
+/* ---------- SETUP BUTTON ---------- */
+
+.setup-actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+
+/* ---------- RESPONSIVE ABOUT + SETUP ---------- */
+
+@media (max-width: 750px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .setup-card {
+        padding: 22px;
+    }
+
+    .setup-form {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full {
+        grid-column: auto;
+    }
+
+    .option-group {
+        grid-template-columns: 1fr;
+    }
+
+    .setup-actions {
+        flex-direction: column;
+    }
+
+    .setup-actions button {
+        width: 100%;
+    }
+}
+/* =====================================================
+   InterviewMate AI
+   STYLE.CSS - PART 4
+   Interview Page + Answer Mode + Voice Recording
+   ===================================================== */
+
+
+/* ---------- INTERVIEW HEADER ---------- */
+
+.interview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.interview-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 11px;
+    border-radius: 20px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.question-counter {
+    background: #111827;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* ---------- TIMER ---------- */
+
+.timer-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 8px 13px;
+    font-weight: 700;
+}
+
+.timer-box span {
+    color: #2563eb;
+}
+
+
+/* ---------- QUESTION CARD ---------- */
+
+.question-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.question-label {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.question-card h2 {
+    font-size: 25px;
+    line-height: 1.45;
+    color: #172033;
+}
+
+
+/* ---------- ANSWER TABS ---------- */
+
+.answer-tabs {
+    display: flex;
+    gap: 8px;
+    background: #f2f4f7;
+    padding: 5px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.answer-tab {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 11px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: #667085;
+    transition: 0.25s ease;
+}
+
+.answer-tab:hover {
+    color: #2563eb;
+}
+
+.answer-tab.active {
+    background: white;
+    color: #2563eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------- TYPE ANSWER ---------- */
+
+.answer-panel {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.type-answer-box textarea {
+    width: 100%;
+    min-height: 190px;
+    resize: vertical;
+    border: 1px solid #d0d5dd;
+    border-radius: 12px;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.7;
+    outline: none;
+}
+
+.type-answer-box textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+
+/* ---------- VOICE ANSWER ---------- */
+
+.voice-box {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    padding: 25px;
+    background: #f8fafc;
+}
+
+.mic-btn {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.mic-btn:hover {
+    transform: scale(1.05);
+    background: #1d4ed8;
+}
+
+.mic-btn.recording {
+    background: #dc2626;
+    animation: pulseMic 1.2s infinite;
+}
+
+@keyframes pulseMic {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.35);
+    }
+
+    70% {
+        box-shadow: 0 0 0 18px rgba(220, 38, 38, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+    }
+}
+
+.speech-status {
+    color: #667085;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.transcript-box {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.transcript-box h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.transcript-text {
+    min-height: 70px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 12px;
+    color: #475467;
+    font-size: 14px;
+}
+
+
+/* ---------- INTERVIEW ACTIONS ---------- */
+
+.interview-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.interview-actions-left,
+.interview-actions-right {
+    display: flex;
+    gap: 10px;
+}
+
+
+/* ---------- ANSWER TIMER ---------- */
+
+.answer-timer {
+    text-align: center;
+    color: #667085;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+/* ---------- HIDDEN ANSWER PANEL ---------- */
+
+.answer-panel.hidden {
+    display: none;
+}
+
+
+/* ---------- RESPONSIVE INTERVIEW ---------- */
+
+@media (max-width: 650px) {
+
+    .interview-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .question-card {
+        padding: 22px;
+    }
+
+    .question-card h2 {
+        font-size: 21px;
+    }
+
+    .answer-tabs {
+        flex-direction: column;
+    }
+
+    .answer-tab {
+        width: 100%;
+    }
+
+    .interview-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .interview-actions-left,
+    .interview-actions-right {
+        width: 100%;
+    }
+
+    .interview-actions button {
+        flex: 1;
+    }
+
+    .voice-box {
+        min-height: 230px;
+        padding: 18px;
+    }
+}
+/* =====================================================
+   InterviewMate AI
+   STYLE.CSS - PART 5
+   Result + Final Report + Dashboard + History + Profile
+   ===================================================== */
+
+
+/* ---------- RESULT PAGE ---------- */
+
+.result-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.result-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.result-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.result-score {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.result-score strong {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.result-score small {
+    font-size: 11px;
+    color: #667085;
+    margin-top: 4px;
+}
+
+
+/* ---------- FEEDBACK BOX ---------- */
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.feedback-box {
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.feedback-box h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.feedback-box ul {
+    padding-left: 20px;
+}
+
+.feedback-box li {
+    margin-bottom: 7px;
+    color: #475467;
+    font-size: 14px;
+}
+
+.feedback-strength {
+    background: #ecfdf3;
+    border: 1px solid #bbf7d0;
+}
+
+.feedback-improvement {
+    background: #fff7ed;
+    border: 1px solid #fed7aa;
+}
+
+.communication-box {
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 18px;
+}
+
+.communication-box h3 {
+    margin-bottom: 8px;
+}
+
+
+/* ---------- SUGGESTED ANSWER ---------- */
+
+.suggested-answer {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 20px;
+    margin-top: 18px;
+}
+
+.suggested-answer h3 {
+    margin-bottom: 10px;
+}
+
+.suggested-answer p {
+    color: #475467;
+    line-height: 1.8;
+}
+
+
+/* ---------- FINAL REPORT ---------- */
+
+.final-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.final-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.final-header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.final-header p {
+    color: #667085;
+}
+
+.final-score-card {
+    background: #111827;
+    color: white;
+    border-radius: 22px;
+    padding: 35px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.final-score-circle {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 7px solid #60a5fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto 15px;
+}
+
+.final-score-circle strong {
+    font-size: 38px;
+}
+
+.final-score-circle span {
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+.final-score-card p {
+    color: #cbd5e1;
+}
+
+
+/* ---------- SCORE STAT CARDS ---------- */
+
+.score-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.score-stat {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 22px;
+    text-align: center;
+}
+
+.score-stat strong {
+    display: block;
+    font-size: 28px;
+    color: #2563eb;
+    margin-bottom: 4px;
+}
+
+.score-stat span {
+    color: #667085;
+    font-size: 13px;
+}
+
+
+/* ---------- FINAL FEEDBACK ---------- */
+
+.final-feedback-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.final-feedback-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 17px;
+    padding: 22px;
+}
+
+.final-feedback-card h3 {
+    margin-bottom: 12px;
+}
+
+.final-feedback-card p,
+.final-feedback-card li {
+    color: #667085;
+    font-size: 14px;
+}
+
+.final-feedback-card ul {
+    padding-left: 20px;
+}
+
+.final-feedback-card li {
+    margin-bottom: 7px;
+}
+
+
+/* ---------- DASHBOARD ---------- */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.dashboard-stat {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 22px;
+}
+
+.dashboard-stat span {
+    color: #667085;
+    font-size: 13px;
+}
+
+.dashboard-stat strong {
+    display: block;
+    font-size: 30px;
+    margin-top: 5px;
+    color: #2563eb;
+}
+
+.dashboard-section {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 24px;
+}
+
+.dashboard-section h3 {
+    margin-bottom: 15px;
+}
+
+
+/* ---------- LIST ITEMS ---------- */
+
+.recent-item,
+.history-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.recent-item:last-child,
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.recent-info h4,
+.history-info h4 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.recent-info p,
+.history-info p {
+    color: #667085;
+    font-size: 12px;
+}
+
+.list-score {
+    font-weight: 800;
+    color: #2563eb;
+}
+
+
+/* ---------- PROFILE ---------- */
+
+.profile-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 800;
+    margin: 0 auto 15px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-header h2 {
+    margin-bottom: 5px;
+}
+
+.profile-header p {
+    color: #667085;
+}
+
+
+/* ---------- RESPONSIVE PART 5 ---------- */
+
+@media (max-width: 750px) {
+
+    .result-top {
+        align-items: flex-start;
+    }
+
+    .feedback-grid,
+    .final-feedback-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .score-stat-grid,
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .final-score-card {
+        padding: 28px 20px;
+    }
+
+    .final-header h1 {
+        font-size: 30px;
+    }
+
+    .result-card,
+    .profile-card {
+        padding: 22px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .result-top {
+        flex-direction: column;
+    }
+
+    .result-score {
+        margin: auto;
+    }
+
+    .recent-item,
+    .history-item {
+        align-items: flex-start;
+    }
+
+    .dashboard-stat strong {
+        font-size: 26px;
+    }
+}
+/* =====================================================
+   InterviewMate AI
+   STYLE.CSS - PART 6
+   Login + Register + Footer + Final Responsive
+   ===================================================== */
+
+
+/* ---------- AUTH PAGE ---------- */
+
+.auth-container {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.auth-header p {
+    color: #667085;
+    font-size: 14px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.auth-form .form-group {
+    width: 100%;
+}
+
+.auth-form button {
+    margin-top: 5px;
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #667085;
+    font-size: 14px;
+}
+
+.auth-footer button {
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* ---------- PASSWORD / INPUT ICON AREA ---------- */
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    padding-right: 45px;
+}
+
+.input-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #98a2b3;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    background: #111827;
+    color: white;
+    padding: 35px 6% 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 35px;
+}
+
+.footer-brand h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.footer-brand h2 span {
+    color: #60a5fa;
+}
+
+.footer-brand p {
+    color: #9ca3af;
+    font-size: 14px;
+    max-width: 400px;
+}
+
+.footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.footer-column p {
+    color: #9ca3af;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.footer-bottom {
+    max-width: 1150px;
+    margin: 25px auto 0;
+    padding-top: 18px;
+    border-top: 1px solid #374151;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+
+/* ---------- EMPTY STATE ---------- */
+
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #667085;
+}
+
+.empty-state-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.empty-state h3 {
+    color: #344054;
+    margin-bottom: 5px;
+}
+
+
+/* ---------- SUCCESS / ERROR MESSAGE ---------- */
+
+.success-message {
+    background: #ecfdf3;
+    border: 1px solid #a7f3d0;
+    color: #047857;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- LOADING ---------- */
+
+.loading {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.loading-dot {
+    width: 7px;
+    height: 7px;
+    background: #2563eb;
+    border-radius: 50%;
+    animation: loadingAnimation 0.8s infinite alternate;
+}
+
+.loading-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes loadingAnimation {
+    from {
+        opacity: 0.3;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(-4px);
+    }
+}
+
+
+/* ---------- GENERAL SPACING ---------- */
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* ---------- FINAL MOBILE RESPONSIVE ---------- */
+
+@media (max-width: 750px) {
+
+    .auth-container {
+        padding: 20px 0;
+    }
+
+    .auth-card {
+        padding: 24px 20px;
+    }
+
+    .footer {
+        padding: 30px 20px 18px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .footer-brand p {
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .auth-card {
+        border-radius: 15px;
+        padding: 22px 16px;
+    }
+
+    .auth-header h1 {
+        font-size: 25px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .section-heading h1 {
+        font-size: 30px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+}
+
+
+/* ---------- PRINT REPORT ---------- */
+
+@media print {
+
+    .navbar,
+    .footer,
+    .primary-btn,
+    .secondary-btn,
+    .interview-actions {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+    }
+
+    main {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .page.active {
+        display: block;
+    }
+
+    .card,
+    .result-card,
+    .final-score-card,
+    .final-feedback-card {
+        box-shadow: none;
+    }
+}
